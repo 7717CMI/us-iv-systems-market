@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# Source data files (never commit)
+*.xlsx
+*.pdf
+*.pptx
+*.docx
+
+# Agent files (session tracking)
+.agent/
+
+# Temp scripts
+generate_iv_data.js
+pixel_check.js
+crosscheck*.js
+final_check.js
+read_excel.js

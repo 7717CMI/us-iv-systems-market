@@ -1,0 +1,153 @@
+{
+  "U.S.": {
+    "By Product Type": {
+      "IV Catheters / Vascular Access Devices": {},
+      "Infusion Pumps": {},
+      "IV Administration Sets": {},
+      "IV Fluid Containers (IV Bags, Bottles, and Other Containers)": {},
+      "Other (IV Connectors & Flow-Control Components & Others)": {}
+    },
+    "By End User": {
+      "Hospitals": {},
+      "Clinics": {},
+      "Ambulatory Surgical Centers": {},
+      "Home Healthcare Settings": {},
+      "Long-Term Care Facilities": {},
+      "Emergency & Trauma Care Settings": {},
+      "Others (Academics & Research Institutes & Others)": {}
+    },
+    "By Distribution Channel": {
+      "Online": {},
+      "Offline": {},
+      "Direct Sales (Manufacturers to Hospitals / GPO Contracts)": {},
+      "Distributors / Wholesalers": {}
+    },
+    "By Region": {
+      "Northeast": {},
+      "Southwest": {},
+      "West": {},
+      "Southeast": {},
+      "Midwest": {}
+    }
+  },
+  "Northeast": {
+    "By Product Type": {
+      "IV Catheters / Vascular Access Devices": {},
+      "Infusion Pumps": {},
+      "IV Administration Sets": {},
+      "IV Fluid Containers (IV Bags, Bottles, and Other Containers)": {},
+      "Other (IV Connectors & Flow-Control Components & Others)": {}
+    },
+    "By End User": {
+      "Hospitals": {},
+      "Clinics": {},
+      "Ambulatory Surgical Centers": {},
+      "Home Healthcare Settings": {},
+      "Long-Term Care Facilities": {},
+      "Emergency & Trauma Care Settings": {},
+      "Others (Academics & Research Institutes & Others)": {}
+    },
+    "By Distribution Channel": {
+      "Online": {},
+      "Offline": {},
+      "Direct Sales (Manufacturers to Hospitals / GPO Contracts)": {},
+      "Distributors / Wholesalers": {}
+    }
+  },
+  "Southwest": {
+    "By Product Type": {
+      "IV Catheters / Vascular Access Devices": {},
+      "Infusion Pumps": {},
+      "IV Administration Sets": {},
+      "IV Fluid Containers (IV Bags, Bottles, and Other Containers)": {},
+      "Other (IV Connectors & Flow-Control Components & Others)": {}
+    },
+    "By End User": {
+      "Hospitals": {},
+      "Clinics": {},
+      "Ambulatory Surgical Centers": {},
+      "Home Healthcare Settings": {},
+      "Long-Term Care Facilities": {},
+      "Emergency & Trauma Care Settings": {},
+      "Others (Academics & Research Institutes & Others)": {}
+    },
+    "By Distribution Channel": {
+      "Online": {},
+      "Offline": {},
+      "Direct Sales (Manufacturers to Hospitals / GPO Contracts)": {},
+      "Distributors / Wholesalers": {}
+    }
+  },
+  "West": {
+    "By Product Type": {
+      "IV Catheters / Vascular Access Devices": {},
+      "Infusion Pumps": {},
+      "IV Administration Sets": {},
+      "IV Fluid Containers (IV Bags, Bottles, and Other Containers)": {},
+      "Other (IV Connectors & Flow-Control Components & Others)": {}
+    },
+    "By End User": {
+      "Hospitals": {},
+      "Clinics": {},
+      "Ambulatory Surgical Centers": {},
+      "Home Healthcare Settings": {},
+      "Long-Term Care Facilities": {},
+      "Emergency & Trauma Care Settings": {},
+      "Others (Academics & Research Institutes & Others)": {}
+    },
+    "By Distribution Channel": {
+      "Online": {},
+      "Offline": {},
+      "Direct Sales (Manufacturers to Hospitals / GPO Contracts)": {},
+      "Distributors / Wholesalers": {}
+    }
+  },
+  "Southeast": {
+    "By Product Type": {
+      "IV Catheters / Vascular Access Devices": {},
+      "Infusion Pumps": {},
+      "IV Administration Sets": {},
+      "IV Fluid Containers (IV Bags, Bottles, and Other Containers)": {},
+      "Other (IV Connectors & Flow-Control Components & Others)": {}
+    },
+    "By End User": {
+      "Hospitals": {},
+      "Clinics": {},
+      "Ambulatory Surgical Centers": {},
+      "Home Healthcare Settings": {},
+      "Long-Term Care Facilities": {},
+      "Emergency & Trauma Care Settings": {},
+      "Others (Academics & Research Institutes & Others)": {}
+    },
+    "By Distribution Channel": {
+      "Online": {},
+      "Offline": {},
+      "Direct Sales (Manufacturers to Hospitals / GPO Contracts)": {},
+      "Distributors / Wholesalers": {}
+    }
+  },
+  "Midwest": {
+    "By Product Type": {
+      "IV Catheters / Vascular Access Devices": {},
+      "Infusion Pumps": {},
+      "IV Administration Sets": {},
+      "IV Fluid Containers (IV Bags, Bottles, and Other Containers)": {},
+      "Other (IV Connectors & Flow-Control Components & Others)": {}
+    },
+    "By End User": {
+      "Hospitals": {},
+      "Clinics": {},
+      "Ambulatory Surgical Centers": {},
+      "Home Healthcare Settings": {},
+      "Long-Term Care Facilities": {},
+      "Emergency & Trauma Care Settings": {},
+      "Others (Academics & Research Institutes & Others)": {}
+    },
+    "By Distribution Channel": {
+      "Online": {},
+      "Offline": {},
+      "Direct Sales (Manufacturers to Hospitals / GPO Contracts)": {},
+      "Distributors / Wholesalers": {}
+    }
+  }
+}
