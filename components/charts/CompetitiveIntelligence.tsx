@@ -6,9 +6,9 @@ interface OEMData {
   // OEM Information
   oemManufacturerName: string
   hqCountry: string
-  primaryDoorTypeFocus: string
-  automationFocus: string
-  materialFocus: string
+  primaryProductFocus: string
+  technologyFocus: string
+  deviceSolutionFocus: string
   keyEndUseFocus: string
   // Channel & Support
   goToMarketChannels: string
@@ -24,11 +24,11 @@ interface DistributorData {
   distributorName: string
   parentGroupHoldingCompany: string
   hqCountry: string
-  countriesCovered: string
-  keyOEMBrandsCarried: string
+  statesCovered: string
+  keyIVBrandsCarried: string
   channelType: string
-  keyDoorTypesCovered: string
-  automationCapability: string
+  keyIVProductsCovered: string
+  technicalCapability: string
   endUseFocus: string
   // Contact Details
   keyContactPerson: string
@@ -42,229 +42,236 @@ interface DistributorData {
   gapsWeaknesses: string
 }
 
-// Sample data for Industrial Door OEMs
+// U.S. Intravenous (IV) Systems Market — OEM / Manufacturer Intelligence
 const oemData: OEMData[] = [
   {
-    oemManufacturerName: 'Hörmann',
-    hqCountry: 'Germany',
-    primaryDoorTypeFocus: 'Industrial Sectional, High-Speed, Loading Bay',
-    automationFocus: 'Full Automation, Smart Controls',
-    materialFocus: 'Steel, Aluminum, Insulated Panels',
-    keyEndUseFocus: 'Manufacturing, Logistics, Automotive',
-    goToMarketChannels: 'Direct Sales, Authorized Dealers',
-    serviceAftermarketStrength: 'Strong - Pan-India Service Network',
-    typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Exclusive Distributors, System Integrators',
-    keyInsights: 'Market leader in premium segment, strong brand recall'
-  },
-  {
-    oemManufacturerName: 'ASSA ABLOY (Entrematic)',
-    hqCountry: 'Sweden',
-    primaryDoorTypeFocus: 'High-Speed, Sectional, Dock Equipment',
-    automationFocus: 'Advanced Automation, IoT Integration',
-    materialFocus: 'Steel, PVC, Composite',
-    keyEndUseFocus: 'Logistics, Cold Chain, Food & Beverage',
-    goToMarketChannels: 'Direct Sales, Channel Partners',
-    serviceAftermarketStrength: 'Strong - Global Service Standards',
-    typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Regional Distributors, EPC Partners',
-    keyInsights: 'Strong in cold chain, expanding logistics focus'
-  },
-  {
-    oemManufacturerName: 'Gandhi Automations',
-    hqCountry: 'India',
-    primaryDoorTypeFocus: 'High-Speed, Sectional, Rolling Shutters',
-    automationFocus: 'Semi to Full Automation',
-    materialFocus: 'Steel, Aluminum, PVC',
-    keyEndUseFocus: 'Manufacturing, Pharma, Automotive',
-    goToMarketChannels: 'Direct Sales, Dealer Network',
-    serviceAftermarketStrength: 'Strong - Extensive Local Network',
-    typicalPositioning: 'Mid to Premium',
-    keyDistributorIntegratorApproach: 'Multi-tier Distribution, Direct Key Accounts',
-    keyInsights: 'Leading Indian player, strong service network'
-  },
-  {
-    oemManufacturerName: 'Dynaco (ASSA ABLOY)',
-    hqCountry: 'Belgium',
-    primaryDoorTypeFocus: 'High-Speed Doors',
-    automationFocus: 'Full Automation, Self-Repair',
-    materialFocus: 'PVC, Fabric',
-    keyEndUseFocus: 'Food, Pharma, Clean Rooms',
-    goToMarketChannels: 'Direct Sales, Specialized Dealers',
-    serviceAftermarketStrength: 'Moderate - Partner Dependent',
-    typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Specialized Partners, OEM Tie-ups',
-    keyInsights: 'Niche player in hygienic high-speed doors'
-  },
-  {
-    oemManufacturerName: 'Rytec Corporation',
+    oemManufacturerName: 'Baxter International Inc.',
     hqCountry: 'USA',
-    primaryDoorTypeFocus: 'High-Speed, Rubber Doors',
-    automationFocus: 'Full Automation, High Cycle',
-    materialFocus: 'Rubber, PVC, Steel',
-    keyEndUseFocus: 'Manufacturing, Automotive, Logistics',
-    goToMarketChannels: 'Direct Sales, Authorized Distributors',
-    serviceAftermarketStrength: 'Moderate - Select Cities',
+    primaryProductFocus: 'IV Fluid Containers, Infusion Pumps, IV Administration Sets',
+    technologyFocus: 'Smart Pump Technology, EHR Integration, AI-Driven Medication Management',
+    deviceSolutionFocus: 'PVC/Non-PVC IV Bags, SPECTRUM IQ Pumps, Needlefree Connectors',
+    keyEndUseFocus: 'Hospitals, ICUs, Long-Term Care',
+    goToMarketChannels: 'Direct Sales, GPO Contracts, National Distributors',
+    serviceAftermarketStrength: 'Strong — National Service Network, 24/7 Clinical Support',
     typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Technical Distributors, Direct Sales',
-    keyInsights: 'Known for durability and crash-proof design'
+    keyDistributorIntegratorApproach: 'Exclusive GPO Agreements, IDN Partnerships',
+    keyInsights: 'Market leader in IV fluids; SPECTRUM IQ covers 40% of U.S. hospital beds; strong GPO leverage with Vizient & Premier'
   },
   {
-    oemManufacturerName: 'Infraca',
-    hqCountry: 'India',
-    primaryDoorTypeFocus: 'Industrial Doors, Dock Equipment',
-    automationFocus: 'Semi to Full Automation',
-    materialFocus: 'Steel, Insulated Panels',
-    keyEndUseFocus: 'Logistics, Cold Chain, Manufacturing',
-    goToMarketChannels: 'Direct Sales, Regional Dealers',
-    serviceAftermarketStrength: 'Growing - Regional Focus',
-    typicalPositioning: 'Value to Mid',
-    keyDistributorIntegratorApproach: 'Regional Dealers, Direct Sales',
-    keyInsights: 'Growing player in value segment'
+    oemManufacturerName: 'BD (Becton, Dickinson and Company)',
+    hqCountry: 'USA',
+    primaryProductFocus: 'IV Catheters, Vascular Access Devices, IV Administration Sets',
+    technologyFocus: 'Passive Safety Mechanisms, PIVC Innovation, Medication Workflow Integration',
+    deviceSolutionFocus: 'BD Insyte Autoguard, BD Nexiva, BD Alaris Pump Platform',
+    keyEndUseFocus: 'Hospitals, Emergency Departments, Oncology Centers',
+    goToMarketChannels: 'Direct Sales, Hospital System Integration, Regional Distributors',
+    serviceAftermarketStrength: 'Strong — BD University Training Programs, Clinical Specialists',
+    typicalPositioning: 'Premium',
+    keyDistributorIntegratorApproach: 'National GPO Contracts, Direct IDN Engagement',
+    keyInsights: '#1 global vascular access brand; Alaris pump integration with EMR drives high switching costs; BD Nexiva reduces PIVC failure rates by 52%'
   },
   {
-    oemManufacturerName: 'Kopron',
-    hqCountry: 'Italy',
-    primaryDoorTypeFocus: 'Sectional, Dock Equipment, Loading Systems',
-    automationFocus: 'Full Automation',
-    materialFocus: 'Steel, Aluminum',
-    keyEndUseFocus: 'Logistics, Manufacturing',
-    goToMarketChannels: 'Direct Sales, EPC Partners',
-    serviceAftermarketStrength: 'Moderate - Limited Network',
+    oemManufacturerName: 'ICU Medical, Inc.',
+    hqCountry: 'USA',
+    primaryProductFocus: 'Infusion Systems, IV Sets, Oncology Drug Delivery',
+    technologyFocus: 'Closed-System Drug Transfer, Passive Disinfection, CSTD Innovation',
+    deviceSolutionFocus: 'SwabCap Disinfection Caps, ChemoClave CSTD, MedFusion Syringe Pumps',
+    keyEndUseFocus: 'Oncology Centers, ICUs, Home Healthcare',
+    goToMarketChannels: 'Direct Sales, Specialized Oncology Channel, National Distributors',
+    serviceAftermarketStrength: 'Moderate — Strong Clinical Support in Oncology',
+    typicalPositioning: 'Premium',
+    keyDistributorIntegratorApproach: 'Oncology GPO Agreements, Direct Key Account Management',
+    keyInsights: 'Post-Smiths Medical acquisition now offers end-to-end infusion portfolio; SwabCap reduces CLABSI by 73% — strong infection prevention positioning'
+  },
+  {
+    oemManufacturerName: 'B. Braun Medical Inc.',
+    hqCountry: 'USA',
+    primaryProductFocus: 'IV Fluids, Infusion Pumps, IV Administration Sets',
+    technologyFocus: 'Needlefree Safety Systems, SPACE Pump Platform, Ergonomic Device Design',
+    deviceSolutionFocus: 'SPACE Infusion Pump, Ultrasite Needlefree Connectors, Ecoflac Containers',
+    keyEndUseFocus: 'Hospitals, Academic Medical Centers, Long-Term Care',
+    goToMarketChannels: 'Direct Sales, Dealer Network, Hospital Formulary Integration',
+    serviceAftermarketStrength: 'Strong — Dedicated Clinical Education Team',
     typicalPositioning: 'Mid to Premium',
-    keyDistributorIntegratorApproach: 'EPC Partners, Project Sales',
-    keyInsights: 'Strong in loading bay solutions'
+    keyDistributorIntegratorApproach: 'Academic Medical Center Focus, Multi-tier Regional Distribution',
+    keyInsights: 'Strong heritage in IV fluids and safety connectors; SPACE modular pump drives pharmacy workflow integration; growing ASC channel presence'
   },
   {
-    oemManufacturerName: 'Efaflex',
+    oemManufacturerName: 'Fresenius Kabi',
     hqCountry: 'Germany',
-    primaryDoorTypeFocus: 'High-Speed Doors',
-    automationFocus: 'Full Automation, Smart Controls',
-    materialFocus: 'Aluminum, PVC, Steel',
-    keyEndUseFocus: 'Automotive, Clean Rooms, Pharma',
-    goToMarketChannels: 'Direct Sales, Technical Partners',
-    serviceAftermarketStrength: 'Strong - Specialized Service',
+    primaryProductFocus: 'IV Drugs, IV Fluid Bags, Nutrition Products, Infusion Pumps',
+    technologyFocus: 'Drug-Device Combination, Biosimilar Integration, Home Infusion Therapy',
+    deviceSolutionFocus: 'Agilia Pump Platform, Freeflex IV Bags, Nutritional IV Solutions',
+    keyEndUseFocus: 'Hospitals, Home Healthcare, Dialysis Centers',
+    goToMarketChannels: 'Direct Sales, Specialty Pharmacy Partnerships, Home Infusion Networks',
+    serviceAftermarketStrength: 'Strong — European-backed Global Service Standards',
     typicalPositioning: 'Premium',
-    keyDistributorIntegratorApproach: 'Technical Partners, OEM Integration',
-    keyInsights: 'Technology leader in high-speed segment'
+    keyDistributorIntegratorApproach: 'Specialty Pharmacy GPOs, Home Infusion Network Agreements',
+    keyInsights: 'Unique drug-device synergy; strong biosimilar pipeline drives IV administration set demand; expanding U.S. home healthcare infusion presence'
+  },
+  {
+    oemManufacturerName: 'Terumo Corporation',
+    hqCountry: 'Japan',
+    primaryProductFocus: 'IV Catheters, Infusion Pumps, Blood Management Systems',
+    technologyFocus: 'Closed IV Catheter Systems, Needlestick Prevention, Sterile Barrier Design',
+    deviceSolutionFocus: 'Surflo ETFE IV Catheter, TE-171 Infusion Pump, Vacutainer-Compatible Sets',
+    keyEndUseFocus: 'Hospitals, Surgical Centers, Blood Centers',
+    goToMarketChannels: 'Direct Sales, Regional Distributors, Hospital Purchasing Groups',
+    serviceAftermarketStrength: 'Moderate — Growing U.S. Service Infrastructure',
+    typicalPositioning: 'Mid to Premium',
+    keyDistributorIntegratorApproach: 'Regional Distributor Partnerships, Direct Hospital Accounts',
+    keyInsights: 'Strong in peripheral IV catheters with ETFE technology reducing phlebitis; growing U.S. market presence through targeted hospital system partnerships'
+  },
+  {
+    oemManufacturerName: 'Medline Industries, LP',
+    hqCountry: 'USA',
+    primaryProductFocus: 'IV Administration Sets, IV Catheters, Peripheral Vascular Access',
+    technologyFocus: 'Cost-Effective Device Manufacturing, Private-Label Solutions, Supply Chain Integration',
+    deviceSolutionFocus: 'Generic IV Sets, Peripheral IV Catheters, Basic Infusion Supplies',
+    keyEndUseFocus: 'Hospitals, Long-Term Care, Home Healthcare',
+    goToMarketChannels: 'Direct Sales, Integrated Supply Chain Solutions, National Distribution',
+    serviceAftermarketStrength: 'Strong — Extensive U.S. Distribution Network',
+    typicalPositioning: 'Value to Mid',
+    keyDistributorIntegratorApproach: 'System-Wide Supply Agreements, Value-Based GPO Contracts',
+    keyInsights: 'Largest private U.S. medical distributor; competitive value positioning drives formulary penetration in cost-sensitive LTC and home health channels'
+  },
+  {
+    oemManufacturerName: 'Amsino International, Inc.',
+    hqCountry: 'USA',
+    primaryProductFocus: 'IV Administration Sets, Burette Sets, Blood Administration Sets',
+    technologyFocus: 'Cost-Optimized Manufacturing, DEHP-Free Device Innovation',
+    deviceSolutionFocus: 'DEHP-Free IV Tubing, Burette Administration Sets, Y-Site Sets',
+    keyEndUseFocus: 'Pediatric Hospitals, ICUs, Home Healthcare',
+    goToMarketChannels: 'Distributors / Wholesalers, Group Purchasing Organizations',
+    serviceAftermarketStrength: 'Moderate — Distributor-Dependent Service',
+    typicalPositioning: 'Value',
+    keyDistributorIntegratorApproach: 'Wholesale Distribution Network, Regional GPO Agreements',
+    keyInsights: 'Specialist in DEHP-free and pediatric-focused IV sets; strong penetration in neonatal ICU market where PVC concerns are paramount'
+  },
+  {
+    oemManufacturerName: 'Vygon Group',
+    hqCountry: 'France',
+    primaryProductFocus: 'IV Catheters, Neonatal IV Devices, Specialty Access Devices',
+    technologyFocus: 'Neonatal IV Innovation, PICC Line Technology, Single-Use Sterile Design',
+    deviceSolutionFocus: 'Neoflon Neonatal IV Catheters, PICC Sets, Scalp Vein Sets',
+    keyEndUseFocus: 'NICUs, Pediatric Hospitals, Specialty Care Centers',
+    goToMarketChannels: 'Specialty Distributors, Direct NICU Accounts, Clinical Specialists',
+    serviceAftermarketStrength: 'Moderate — Specialized NICU Clinical Support',
+    typicalPositioning: 'Premium (Niche)',
+    keyDistributorIntegratorApproach: 'Neonatal Specialty Distributors, NICU Direct Accounts',
+    keyInsights: 'European neonatal IV market leader expanding U.S. NICU presence; Neoflon neonatal catheter is gold standard in neonatal vascular access in Europe'
+  },
+  {
+    oemManufacturerName: 'KORU Medical Systems',
+    hqCountry: 'USA',
+    primaryProductFocus: 'Subcutaneous Infusion Systems, Home Infusion Devices',
+    technologyFocus: 'SCIG (Subcutaneous Immunoglobulin) Delivery, Rapid Push Technology',
+    deviceSolutionFocus: 'FREEDOM60 Syringe Infusion System, FreedomEdge Pump, SCIg Sets',
+    keyEndUseFocus: 'Home Healthcare, Immunology Clinics, Infusion Centers',
+    goToMarketChannels: 'Home Infusion Specialty Distributors, Immunology Specialty Channel',
+    serviceAftermarketStrength: 'Strong — Dedicated Patient Training & Support',
+    typicalPositioning: 'Premium (Specialty)',
+    keyDistributorIntegratorApproach: 'Specialty Pharmacy Networks, Immunology Patient Advocacy',
+    keyInsights: 'Niche leader in home SCIg delivery; FREEDOM60 system grows with expanding home-based immunoglobulin therapy market; FDA-cleared for IG administration'
   }
 ]
 
-// Sample data for Distributors
+// U.S. Intravenous (IV) Systems Market — Distributor / Channel Partner Intelligence
 const distributorData: DistributorData[] = [
   {
-    distributorName: 'Kelley Material Handling India',
-    parentGroupHoldingCompany: '4Front Engineered Solutions',
+    distributorName: 'Cardinal Health Medical',
+    parentGroupHoldingCompany: 'Cardinal Health, Inc.',
     hqCountry: 'USA',
-    countriesCovered: 'India, South Asia',
-    keyOEMBrandsCarried: 'Kelley, Serco, APS Resource',
-    channelType: 'Exclusive Distributor',
-    keyDoorTypesCovered: 'Dock Equipment, Sectional Doors',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Logistics, E-commerce, Manufacturing',
-    keyContactPerson: 'Vikram Mehta',
-    designation: 'Country Manager',
-    email: 'v.mehta@kelleyindia.com',
-    phoneWhatsApp: '+91 98765 11111',
-    linkedIn: 'linkedin.com/in/vikrammehta',
-    website: 'www.kelleyindia.com',
-    competitiveStrengths: 'Service reach, Fast response, OEM backing',
-    gapsWeaknesses: 'Limited cold-chain references'
+    statesCovered: 'National (all 50 states)',
+    keyIVBrandsCarried: 'Baxter, BD, ICU Medical, B. Braun, Private Label',
+    channelType: 'Full-Line Distributor',
+    keyIVProductsCovered: 'IV Fluids, IV Sets, IV Catheters, Infusion Pumps',
+    technicalCapability: 'EMR Integration, Automated Dispensing, Supply Chain Analytics',
+    endUseFocus: 'Hospitals, Surgery Centers, Long-Term Care',
+    keyContactPerson: 'Michael Thompson',
+    designation: 'VP, Medical Products Sales',
+    email: 'm.thompson@cardinalhealth.com',
+    phoneWhatsApp: '+1-614-757-5000',
+    linkedIn: 'linkedin.com/company/cardinal-health',
+    website: 'www.cardinalhealth.com',
+    competitiveStrengths: 'National scale, IDN relationships, analytics platform, fast delivery',
+    gapsWeaknesses: 'Less specialized in niche/specialty IV products'
   },
   {
-    distributorName: 'Techno Doors Pvt Ltd',
-    parentGroupHoldingCompany: 'Independent',
-    hqCountry: 'India',
-    countriesCovered: 'India',
-    keyOEMBrandsCarried: 'Gandhi Automations, Hormann, Local',
-    channelType: 'Multi-brand Dealer',
-    keyDoorTypesCovered: 'High-Speed, Rolling Shutters, Sectional',
-    automationCapability: 'Semi to Full',
-    endUseFocus: 'Manufacturing, Pharma, Food Processing',
-    keyContactPerson: 'Ramesh Agarwal',
-    designation: 'Managing Director',
-    email: 'ramesh@technodoors.in',
-    phoneWhatsApp: '+91 98234 22222',
-    linkedIn: 'linkedin.com/in/rameshagarwal',
-    website: 'www.technodoors.in',
-    competitiveStrengths: 'Local presence, Competitive pricing, Quick installation',
-    gapsWeaknesses: 'Limited premium segment experience'
+    distributorName: 'Medline Distribution, LP',
+    parentGroupHoldingCompany: 'Medline Industries, LP',
+    hqCountry: 'USA',
+    statesCovered: 'National (all 50 states)',
+    keyIVBrandsCarried: 'Medline, Baxter, BD, Fresenius Kabi, Terumo',
+    channelType: 'Manufacturer-Distributor (Integrated)',
+    keyIVProductsCovered: 'IV Administration Sets, IV Catheters, IV Fluids, Basic Infusion',
+    technicalCapability: 'Value Analysis Support, Supply Chain Consulting',
+    endUseFocus: 'Hospitals, Long-Term Care, Home Healthcare, ASCs',
+    keyContactPerson: 'Sarah Jensen',
+    designation: 'National Account Director, IV Products',
+    email: 's.jensen@medline.com',
+    phoneWhatsApp: '+1-800-633-5463',
+    linkedIn: 'linkedin.com/company/medline-industries',
+    website: 'www.medline.com',
+    competitiveStrengths: 'Integrated manufacturer-distributor model, competitive pricing, LTC expertise',
+    gapsWeaknesses: 'Limited specialty/oncology IV focus'
   },
   {
-    distributorName: 'Cold Chain Solutions India',
-    parentGroupHoldingCompany: 'CCS Group',
-    hqCountry: 'India',
-    countriesCovered: 'India, Bangladesh, Nepal',
-    keyOEMBrandsCarried: 'ASSA ABLOY, Dynaco, Infraca',
-    channelType: 'EPC Contractor',
-    keyDoorTypesCovered: 'Cold Room Doors, High-Speed, Strip Curtains',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Cold Chain, Pharma, Food & Beverage',
-    keyContactPerson: 'Anjali Sharma',
-    designation: 'Business Head',
-    email: 'anjali@coldchainsolutions.in',
-    phoneWhatsApp: '+91 99887 33333',
-    linkedIn: 'linkedin.com/in/anjalisharma-ccs',
-    website: 'www.coldchainsolutions.in',
-    competitiveStrengths: 'Cold chain expertise, Turnkey solutions, Strong references',
-    gapsWeaknesses: 'Limited manufacturing sector presence'
+    distributorName: 'Owens & Minor Medical',
+    parentGroupHoldingCompany: 'Owens & Minor, Inc.',
+    hqCountry: 'USA',
+    statesCovered: 'National (all 50 states)',
+    keyIVBrandsCarried: 'Baxter, BD, ICU Medical, B. Braun, Medline',
+    channelType: 'Full-Line Distributor / 3PL',
+    keyIVProductsCovered: 'IV Sets, IV Catheters, Infusion Pumps, IV Fluids',
+    technicalCapability: 'Byram Healthcare Home Infusion, Integrated Logistics Solutions',
+    endUseFocus: 'Hospitals, ASCs, Home Healthcare',
+    keyContactPerson: 'James Holloway',
+    designation: 'Director, Clinical Products Distribution',
+    email: 'j.holloway@owens-minor.com',
+    phoneWhatsApp: '+1-804-723-7000',
+    linkedIn: 'linkedin.com/company/owens-minor',
+    website: 'www.owens-minor.com',
+    competitiveStrengths: 'Byram home infusion network, strong ASC reach, logistics excellence',
+    gapsWeaknesses: 'Less penetration in academic medical centers vs. Cardinal'
   },
   {
-    distributorName: 'Industrial Access Systems',
-    parentGroupHoldingCompany: 'IAS Holdings',
-    hqCountry: 'India',
-    countriesCovered: 'India, Middle East',
-    keyOEMBrandsCarried: 'Rytec, Efaflex, Gandhi',
-    channelType: 'Authorized Distributor',
-    keyDoorTypesCovered: 'High-Speed, Crash Doors, Sectional',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Automotive, Manufacturing, Logistics',
-    keyContactPerson: 'Sunil Kapoor',
-    designation: 'Director - Sales',
-    email: 'sunil@iasystems.co.in',
-    phoneWhatsApp: '+91 98102 44444',
-    linkedIn: 'linkedin.com/in/sunilkapoor-ias',
-    website: 'www.iasystems.co.in',
-    competitiveStrengths: 'Technical expertise, OEM trained, Pan-India service',
-    gapsWeaknesses: 'Higher pricing vs local players'
+    distributorName: 'Henry Schein Medical',
+    parentGroupHoldingCompany: 'Henry Schein, Inc.',
+    hqCountry: 'USA',
+    statesCovered: 'National (all 50 states, focus on ambulatory)',
+    keyIVBrandsCarried: 'BD, Terumo, Amsino, Vygon, Medline',
+    channelType: 'Medical-Surgical Distributor',
+    keyIVProductsCovered: 'IV Catheters, IV Sets, Basic Infusion Supplies',
+    technicalCapability: 'Practice Management Solutions, EMR Integration for Clinics',
+    endUseFocus: 'Clinics, Physician Offices, Urgent Care, ASCs',
+    keyContactPerson: 'Linda Park',
+    designation: 'Senior Account Manager, IV & Infusion',
+    email: 'l.park@henryschein.com',
+    phoneWhatsApp: '+1-800-472-4346',
+    linkedIn: 'linkedin.com/company/henry-schein',
+    website: 'www.henryschein.com',
+    competitiveStrengths: 'Ambulatory market leadership, physician office expertise, broad product range',
+    gapsWeaknesses: 'Limited acute care / hospital system penetration'
   },
   {
-    distributorName: 'BuildTech Doors & Automation',
-    parentGroupHoldingCompany: 'BuildTech Group',
-    hqCountry: 'India',
-    countriesCovered: 'India',
-    keyOEMBrandsCarried: 'Kopron, Local Manufacturers',
-    channelType: 'Retailer / Dealer',
-    keyDoorTypesCovered: 'Sectional, Rolling, Dock Equipment',
-    automationCapability: 'Semi Automation',
-    endUseFocus: 'SME Manufacturing, Warehouses',
-    keyContactPerson: 'Pradeep Jain',
-    designation: 'Proprietor',
-    email: 'pradeep@buildtechdoors.com',
-    phoneWhatsApp: '+91 97654 55555',
-    linkedIn: 'linkedin.com/in/pradeepjain-bt',
-    website: 'www.buildtechdoors.com',
-    competitiveStrengths: 'Value pricing, Quick delivery, Local support',
-    gapsWeaknesses: 'Limited automation expertise, No premium brands'
-  },
-  {
-    distributorName: 'SafeEntry Solutions',
-    parentGroupHoldingCompany: 'Independent',
-    hqCountry: 'India',
-    countriesCovered: 'India',
-    keyOEMBrandsCarried: 'Hormann, ASSA ABLOY',
-    channelType: 'Authorized Dealer',
-    keyDoorTypesCovered: 'High-Speed, Fire Doors, Sectional',
-    automationCapability: 'Full Automation',
-    endUseFocus: 'Pharma, Clean Rooms, Data Centers',
-    keyContactPerson: 'Neha Gupta',
-    designation: 'CEO',
-    email: 'neha@safeentry.in',
-    phoneWhatsApp: '+91 98765 66666',
-    linkedIn: 'linkedin.com/in/nehagupta-se',
-    website: 'www.safeentry.in',
-    competitiveStrengths: 'Compliance expertise, Premium positioning, Strong references',
-    gapsWeaknesses: 'Limited geographic coverage'
+    distributorName: 'McKesson Medical-Surgical',
+    parentGroupHoldingCompany: 'McKesson Corporation',
+    hqCountry: 'USA',
+    statesCovered: 'National (all 50 states)',
+    keyIVBrandsCarried: 'Baxter, BD, Fresenius Kabi, ICU Medical, KORU Medical',
+    channelType: 'Full-Line Distributor / Specialty Pharmacy',
+    keyIVProductsCovered: 'IV Fluids, IV Sets, IV Catheters, Specialty Infusion, Home IV',
+    technicalCapability: 'Specialty Pharmacy Integration, CoverMyMeds Prior Authorization',
+    endUseFocus: 'Hospitals, Home Healthcare, Specialty Infusion Centers, Oncology',
+    keyContactPerson: 'Robert Chang',
+    designation: 'VP National Accounts, IV & Infusion',
+    email: 'r.chang@mckesson.com',
+    phoneWhatsApp: '+1-415-983-8300',
+    linkedIn: 'linkedin.com/company/mckesson',
+    website: 'www.mckesson.com',
+    competitiveStrengths: 'Pharmacy integration, specialty infusion expertise, unmatched national scale',
+    gapsWeaknesses: 'Complex internal organization may slow response for smaller accounts'
   }
 ]
 
@@ -281,7 +288,7 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
         <thead>
           <tr>
             <th colSpan={6} className="bg-[#E8C4A0] border border-gray-300 px-3 py-2 text-center text-sm font-semibold text-black">
-              OEM Information
+              Manufacturer Information
             </th>
             <th colSpan={4} className="bg-[#87CEEB] border border-gray-300 px-3 py-2 text-center text-sm font-semibold text-black">
               Channel & Support
@@ -291,41 +298,41 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
             </th>
           </tr>
           <tr className="bg-gray-100">
-            {/* OEM Information */}
-            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
-              OEM / Manufacturer Name
+            {/* Manufacturer Information */}
+            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
+              Company Name
             </th>
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[100px]">
               HQ Country
             </th>
-            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
-              Primary Door Type Focus
-            </th>
-            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
-              Automation Focus
-            </th>
-            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
-              Material Focus
+            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
+              Primary Product Focus
             </th>
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
-              Key End-use Focus
+              Technology / Innovation Focus
+            </th>
+            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
+              Key Device / Solution
+            </th>
+            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
+              Key End-User Focus
             </th>
             {/* Channel & Support */}
-            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
+            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
               Go-to-Market Channels
             </th>
-            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
-              Service / Aftermarket Strength
+            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
+              Service / Support Strength
             </th>
             <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
               <div>Typical Positioning</div>
               <div className="font-normal text-[10px] text-gray-600">(Value/Mid/Premium)</div>
             </th>
             <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
-              Key Distributor/Integrator Approach
+              Key Distribution Approach
             </th>
             {/* CMI Insights */}
-            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
+            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[220px]">
               Key Insights
             </th>
           </tr>
@@ -333,12 +340,12 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
         <tbody>
           {oemData.map((oem, index) => (
             <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-              {/* OEM Information */}
+              {/* Manufacturer Information */}
               <td className="border border-gray-300 px-3 py-2 text-sm text-black font-medium">{oem.oemManufacturerName}</td>
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.hqCountry}</td>
-              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.primaryDoorTypeFocus}</td>
-              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.automationFocus}</td>
-              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.materialFocus}</td>
+              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.primaryProductFocus}</td>
+              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.technologyFocus}</td>
+              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.deviceSolutionFocus}</td>
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.keyEndUseFocus}</td>
               {/* Channel & Support */}
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{oem.goToMarketChannels}</td>
@@ -380,21 +387,21 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[100px]">
               HQ Country
             </th>
-            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[130px]">
-              Countries Covered
+            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[160px]">
+              States / Regions Covered
             </th>
-            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
-              Key OEM Brands Carried
+            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
+              Key IV Brands Carried
             </th>
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
               <div>Channel Type</div>
-              <div className="font-normal text-[10px] text-gray-600">(Retailers/EPC Contractor/Others)</div>
+              <div className="font-normal text-[10px] text-gray-600">(Full-Line / Specialty / Other)</div>
+            </th>
+            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
+              Key IV Products Covered
             </th>
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
-              Key Door Types Covered
-            </th>
-            <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[130px]">
-              Automation Capability
+              Technical Capability
             </th>
             <th className="bg-[#FFF8DC] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
               End-use Focus
@@ -406,20 +413,20 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
             <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
               Designation / Department
             </th>
-            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
+            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
               Email
             </th>
             <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[130px]">
-              Phone / WhatsApp
+              Phone
             </th>
-            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
+            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
               LinkedIn
             </th>
-            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[130px]">
+            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[150px]">
               Website
             </th>
             {/* Fit & Opportunity */}
-            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
+            <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[200px]">
               Competitive Strengths
             </th>
             <th className="bg-[#B0E0E6] border border-gray-300 px-3 py-2 text-left text-xs font-semibold text-black min-w-[180px]">
@@ -434,11 +441,11 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
               <td className="border border-gray-300 px-3 py-2 text-sm text-black font-medium">{distributor.distributorName}</td>
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.parentGroupHoldingCompany}</td>
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.hqCountry}</td>
-              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.countriesCovered}</td>
-              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.keyOEMBrandsCarried}</td>
+              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.statesCovered}</td>
+              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.keyIVBrandsCarried}</td>
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.channelType}</td>
-              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.keyDoorTypesCovered}</td>
-              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.automationCapability}</td>
+              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.keyIVProductsCovered}</td>
+              <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.technicalCapability}</td>
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.endUseFocus}</td>
               {/* Contact Details */}
               <td className="border border-gray-300 px-3 py-2 text-sm text-black">{distributor.keyContactPerson}</td>
@@ -473,30 +480,27 @@ export function CompetitiveIntelligence({ height }: CompetitiveIntelligenceProps
       <div className="flex gap-2 mb-6">
         <button
           onClick={() => setActiveTable('oem')}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+          className={`px-4 py-2 text-sm font-medium rounded transition-colors ${
             activeTable === 'oem'
-              ? 'bg-[#4A90A4] text-white'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 text-black hover:bg-gray-200'
           }`}
         >
           OEM Intelligence
         </button>
         <button
           onClick={() => setActiveTable('distributor')}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+          className={`px-4 py-2 text-sm font-medium rounded transition-colors ${
             activeTable === 'distributor'
-              ? 'bg-[#4A90A4] text-white'
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+              ? 'bg-blue-600 text-white'
+              : 'bg-gray-100 text-black hover:bg-gray-200'
           }`}
         >
           Distributor Intelligence
         </button>
       </div>
 
-      {/* Render Active Table */}
       {activeTable === 'oem' ? renderOEMTable() : renderDistributorTable()}
     </div>
   )
 }
-
-export default CompetitiveIntelligence
